@@ -6,9 +6,12 @@
     margin-bottom: -75px;
 }
 header{
-    border-bottom: solid 2px black;
+    border-bottom: groove 15px red;
 }
 .headerContent{
     width: 800px;
     margin: 0 auto;
-  }
+}
+.sign-in-and-up{
+    float: right;
+}

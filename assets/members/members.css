@@ -1,10 +1,6 @@
 body{
   text-align: center;
 }
-a{
-  color: red;
-  text-decoration: none;
-}
 .memberName{
   margin-top: 2px;
 }
@@ -15,4 +11,11 @@ a{
 .person{
   margin: 5px auto;
   width: 690px;
+  background: #00008f;
+  border-radius: 10px;
+  float: right;
+  padding-top: 10px;
+}
+.description{
+  color: white;
 }
