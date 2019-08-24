@@ -1,0 +1,14 @@
+.sideNavLink{
+    
+}
+.sideNavList{
+    padding: 5px;
+}
+.sideNav{
+    list-style-type: none;
+    max-width: 145px;
+    padding-left: 0;
+    margin: 5px auto;
+    border: black 2px solid;
+    float: left;
+  }

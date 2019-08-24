@@ -1,0 +1,14 @@
+.kururin{
+    width: 100px;
+}
+.logo{
+    text-align: left;
+    margin-bottom: -75px;
+}
+header{
+    border-bottom: solid 2px black;
+}
+.headerContent{
+    width: 800px;
+    margin: 0 auto;
+  }

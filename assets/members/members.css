@@ -1,0 +1,18 @@
+body{
+  text-align: center;
+}
+a{
+  color: red;
+  text-decoration: none;
+}
+.memberName{
+  margin-top: 2px;
+}
+.personPhoto{
+  width: 350px;
+  height: 370px;
+}
+.person{
+  margin: 5px auto;
+  width: 690px;
+}
