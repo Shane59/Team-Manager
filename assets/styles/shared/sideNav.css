@@ -12,4 +12,8 @@
     border: black 2px solid;
     float: left;
     border-radius: 10px;
+    text-align: left;
+  }
+  .arrow{
+      padding: 1px;
   }

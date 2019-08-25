@@ -13,7 +13,7 @@ app.use(express.static('public'));
 app.use("/assets", express.static(path.join(__dirname, "assets")));
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/views/index.html');
+  res.sendFile(__dirname + '/index.html');
 });
 
 const listener = app.listen(process.env.PORT, function(){

@@ -10,12 +10,23 @@ body{
 }
 .person{
   margin: 5px auto;
-  width: 690px;
+  width: 680px;
   background: #00008f;
   border-radius: 10px;
   float: right;
   padding-top: 10px;
+  padding-bottom: 10px;
+
 }
 .description{
-  color: white;
+  background-color: white;
+  margin-right: 35px;
+  margin-left: 35px;
+  border-radius: 5px;
+  text-align: left;
+  padding: 10px 10px;
+}
+.memberTitle{
+  border-bottom: 2px dashed blue;
+  margin-right: 30px;
 }
