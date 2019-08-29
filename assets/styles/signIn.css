@@ -1,0 +1,14 @@
+.signInForm{
+    padding: 20px;
+    width: 270px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    text-align: right;
+    background-color: deepskyblue;
+    color: white;
+    border-radius: 10px;
+}
+.column{
+    margin-bottom: 5px;
+}

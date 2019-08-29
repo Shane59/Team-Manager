@@ -3,16 +3,15 @@
 }
 .sideNavList{
     padding: 5px;
+    flex: 1;
 }
 .sideNav{
     list-style-type: none;
-    max-width: 145px;
-    padding-left: 0;
     margin: 5px auto;
-    border: black 2px solid;
-    float: left;
     border-radius: 10px;
-    text-align: left;
+    text-align: center;
+    display: flex;
+    padding-left: 0;
   }
   .arrow{
       padding: 1px;

@@ -10,8 +10,8 @@ body{
 }
 .person{
   margin: 5px auto;
-  width: 680px;
-  background: #00008f;
+  width: 800px;
+  background: deepskyblue;
   border-radius: 10px;
   float: right;
   padding-top: 10px;
