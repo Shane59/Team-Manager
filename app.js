@@ -13,10 +13,22 @@ app.use(express.static('public'));
 app.use("/assets", express.static(path.join(__dirname, "assets")));
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile(path.join(__dirname, '/login.html'));
 });
+
+app.get('/home', function(request, response) {
+	if (request.session.loggedin) {
+		res.sendFile(path.join(__dirname, '/index.html'));
+	} else {
+		response.send('Please login to view this page!');
+	}
+	response.end();
+});
+
+// app.get('/', function(req, res){
+//   res.sendFile(path.join(__dirname + '/login.html'));
+// });
 
 const listener = app.listen(process.env.PORT, function(){
   console.log('your app is running on port ' + listener.address().port);
 })
-

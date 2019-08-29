@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="../members/members.css">
-    <link rel="stylesheet" href="../styles/shared/sideNav.css">
-    <link rel="stylesheet" href="../styles/shared/header.css">
-    <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="stylesheet" href="../styles/signIn.css">
+    <link rel="stylesheet" href="assets/members/members.css">
+    <link rel="stylesheet" href="assets/styles/shared/sideNav.css">
+    <link rel="stylesheet" href="assets/styles/shared/header.css">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="assets/styles/signIn.css">
 </head>
 <body>
     <header>
@@ -19,12 +19,12 @@
         </div>
         <div class="headerContent">
             <div class="logo">
-                <img class="kururin" src="/assets/teammates/Kururin.jpg" alt="kururin">
+                <a href="/"><img class="kururin" src="/assets/teammates/Kururin.jpg" alt="kururin"></a>
             </div>
             <h1 class="title">Marketing Tribe - Digital Marketing</h1>
             <nav>
                 <ul class="sideNav">
-                <li class="sideNavList"><a class="sideNavLink" href="">Home</a></li>
+                <li class="sideNavList"><a class="sideNavLink" href="/">Home</a></li>
                 <li class="sideNavList"><a class="sideNavLink" href="">What we do</a></li>
                 <li class="sideNavList"><a class="sideNavLink" href="">Events</a></li>
                 <li class="sideNavList"><a class="sideNavLink" href="">Breakfast</a></li>
@@ -34,12 +34,12 @@
         </div>
     </header>
     <div class="signInForm">
-        <form action="" method="post">
+        <form action="auth" method="POST">
             <div class="column">
-                Employee ID <input type="text">
+                Employee ID <input type="text" name="employee_id">
             </div>
             <div class="column">
-                Password <input type="text">
+                Password <input type="text" name="password">
             </div>
             <div class="column">
                 <input type="submit" value="submit">
