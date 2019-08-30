@@ -14,9 +14,6 @@ app.use(express.static('public'));
 //reading css files via express server
 app.use("/assets", express.static(path.join(__dirname, "assets")));
 
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '/login.html'));
-});
 
 // app.get('/', function(req, res){
 //   res.sendFile(path.join(__dirname + '/login.html'));
@@ -90,12 +87,20 @@ app.post('/auth', function(req, res){
     }
 });
 
-app.get('/index', function(request, response) {
+app.get('/', function(request, response) {
 	if (request.session.loggedin) {
-		response.sendFile(path.join(__dirname + '/index.html'));
+    console.log('you are logged in');
+		response.sendFile(path.join(__dirname, '/index.html'));
 	} else {
-		response.send('Please login to view this page!');
+    response.redirect('/login')
 	}
-	response.end();
+    // response.end();
+});
+
+app.get('/login', function(req, res){
+  res.sendFile(path.join(__dirname, '/login.html'));
+});
+app.get('/index', (req, res) => {
+  res.sendFile(path.join(__dirname, '/index.html'));
 });
 //connection.close();
