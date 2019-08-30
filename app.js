@@ -87,6 +87,25 @@ app.post('/auth', function(req, res){
     }
 });
 
+app.post('/signup', function(req, res){
+  var employee_id = req.body.employee_id;
+  var password = req.body.password;
+  var department = req.body.department;
+  var email = req.body.email;
+
+  connection.query('INSERT INTO users VALUES (?, ?, ?, ?)', [employee_id, password, department, email], function(err, result, field){
+    console.log(result);
+    console.log('entering the data into the database!');
+    if(result === undefined){
+      res.send('You are not registered yet! Please try again!')
+    }
+    else{
+      res.redirect('/login');
+
+    }
+  })
+})
+
 app.get('/', function(request, response) {
 	if (request.session.loggedin) {
     console.log('you are logged in');
@@ -102,5 +121,8 @@ app.get('/login', function(req, res){
 });
 app.get('/index', (req, res) => {
   res.sendFile(path.join(__dirname, '/index.html'));
+});
+app.get('/signup', (req, res) => {
+  res.sendFile(path.join(__dirname, '/signup.html'));
 });
 //connection.close();
