@@ -1,10 +1,9 @@
 .sideNavLink{
-    
+    color: red;
 }
 .sideNavList{
     padding: 5px;
     flex: 1;
-    color: red;
 }
 .sideNavList:hover{
     background-color: #FFCC00;

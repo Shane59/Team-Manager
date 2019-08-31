@@ -14,6 +14,8 @@ app.use(express.static('public'));
 //reading css files via express server
 app.use("/assets", express.static(path.join(__dirname, "assets")));
 
+app.use("/views", express.static(path.join(__dirname, "views")));
+
 
 // app.get('/', function(req, res){
 //   res.sendFile(path.join(__dirname + '/login.html'));

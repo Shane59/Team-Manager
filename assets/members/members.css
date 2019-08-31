@@ -4,10 +4,6 @@ body{
 .memberName{
   margin-top: 2px;
 }
-.personPhoto{
-  width: 350px;
-  height: 370px;
-}
 .person{
   margin: 5px auto;
   width: 800px;
@@ -20,15 +16,20 @@ body{
 }
 .description{
   background-color: white;
-  margin-right: 35px;
-  margin-left: 35px;
   border-radius: 5px;
   text-align: left;
   padding: 10px 10px;
+  width: 450px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
 }
 .memberTitle{
   border-bottom: 2px dashed blue;
   margin-right: 30px;
   font-weight: bold;
   font-size: 20px;
+}
+.content{
+  margin: 10px 10px;
 }
